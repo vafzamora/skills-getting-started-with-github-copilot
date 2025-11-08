@@ -1,0 +1,14 @@
+# Configuration for pytest-cov
+[run]
+source = src
+omit = 
+    tests/*
+    */venv/*
+    */.venv/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise AssertionError
+    raise NotImplementedError
